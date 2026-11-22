@@ -1,5 +1,5 @@
-# Discord integration for Garry's Mod
-
+# g.toms3.cc Discord integration for Garry's Mod
+Custom [fork](https://github.com/troit5ky/gmod_discord_relay) for g.toms3.cc servers
 Transmits GMod chat to Discord and Discord chat to GMod.
 
 ## Dependencies
