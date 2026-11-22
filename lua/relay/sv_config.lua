@@ -1,11 +1,25 @@
+local instances = {
+	[27015] = {
+		webhook = "",
+		readChannelID = "",
+		botToken = ""
+	},
+	[27016] = {
+		webhook = "",
+		readChannelID = "",
+		botToken = ""
+	}
+}
+local port = GetConVar("hostport"):GetInt()
+
 Discord = {
-	['webhook'] = "webhook", -- REPLACE THIS
+	['webhook'] = instances[port].webhook, -- REPLACE THIS
 	
 	['hookname'] = "Gmod Relay",
 
-	['readChannelID'] = "channelid", -- REPLACE THIS
+	['readChannelID'] = instances[port].readChannelID, -- REPLACE THIS
 
-	['botToken'] = 'bottoken', -- REPLACE THIS
+	['botToken'] = instances[port].botToken, -- REPLACE THIS
 
 	["botPrefix"] = "!",
 
